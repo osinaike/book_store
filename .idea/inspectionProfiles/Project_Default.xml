@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Anjola.Assignment.Password.password_correct" />
+          <option value="Anjola.Assignment.Password.correct_password" />
+          <option value="Real_Python.chapter6.invest.i" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

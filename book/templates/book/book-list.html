@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List Page</title>
+
+</head>
+<body>
+    <h1>Book list page</h1>
+    {{ result }}
+    <ul>
+
+        {% for book in books %}
+            <li>{{ book.title }}  --  {{ book.price }} --  {{ book.publisher.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

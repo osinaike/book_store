@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <ul>
+        {% for publisher in publishers %}
+        <li>
+{#            <a href="{% url 'book:publisher-details' pk=publisher.id %}"> {{ publisher.name }} - {{ publisher.email }}</a>#}
+            <a href="{{publisher.get_absolute_url}}">
+                {{ publisher.name }} - {{ publisher.email }}</a>
+
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

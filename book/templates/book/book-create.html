@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Create</title>
+</head>
+<body>
+{## the default for this is GET so we are setting it to POST#}
+<form method="post">
+    {% for field in form %}
+        <div>
+            {{ field.label_tag }}
+            {{ field }}
+            {{ field.errors }}
+        </div>
+    {% endfor %}
+
+    <button>Sumbit</button>
+    {% csrf_token %} {# its a token that is generated for this particular site #}
+</form>
+</body>
+</html>
